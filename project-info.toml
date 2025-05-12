@@ -1,0 +1,28 @@
+# Project 1
+[kd-recs-api]
+id = "kd-recs-api"
+lang = "scala"
+local_path = "/Users/yangj8/Developer/elsevier-research/recs/kd-recs-api"
+local_path_for_code_review = "/Users/yangj8/Developer/elsevier-research/cr-recs/kd-recs-api"
+default_ide = "idea"
+
+[kd-recs-api.scala]
+java_version = "temurin-8"
+
+[kd-recs-api.github]
+remote-url = "https://github.com/elsevier-research/kd-recs-api"
+main_branch_name = "main"
+
+[kd-recs-api.wip]
+github-pr-url = "https://github.com/elsevier-research/kd-recs-api/pull/208"
+
+
+# Project 2
+[project2]
+project_id = "proj-002"
+local_path = "/Users/yangj8/Developer/Personal/project2"
+code_review_path = "/Users/yangj8/Developer/Personal/project2/review"
+default_idea = "VS Code"
+github_remote_url = "https://github.com/username/project2.git"
+java_version = "11"
+main_branch = "develop"
