@@ -28,7 +28,7 @@ function open-pr() {
     # Extract the default editor from the TOML file
     local EDITOR
     EDITOR=$(yq -oy ".$project_name.default_ide" "$PROJECT_INFO_TOML")
-    if [ -z "$EDITOR" ] || [ "$EDITOR" == "null" ]; then
+    if [ -z "$EDITOR" ] || [ "$EDITOR" = "null" ]; then
         echo "Error: Default editor not found for project $project_name in $PROJECT_INFO_TOML"
         return 1
     fi
@@ -36,7 +36,7 @@ function open-pr() {
     # Extract the local path for code review from the TOML file
     local cr_path
     cr_path=$(yq -oy ".$project_name.local_path_for_code_review" "$PROJECT_INFO_TOML")
-    if [ -z "$cr_path" ] || [ "$cr_path" == "null" ]; then
+    if [ -z "$cr_path" ] || [ "$cr_path" = "null" ]; then
         echo "Error: Local path for code review not found for project $project_name in $PROJECT_INFO_TOML"
         return 1
     fi
@@ -68,4 +68,8 @@ function open-pr() {
     }
 }
 
-open-pr "https://github.com/elsevier-research/kd-recs-api/pull/208"
+# open-pr "https://github.com/elsevier-research/kd-recs-api/pull/208"
+
+# function recs-gdpr() {
+    
+# }
